@@ -774,7 +774,7 @@ def lambda_handler(event, context):
         user_detail = event["user_detail"]
         environment = event['env']
         app_id = event['app_id']
-        query = f'''select count(*) from {token_optix_schema}.{CHAT_TRANSCRIPT_TABLE}' ;'''
+        query = f'''select count(*) from {token_optix_schema}.{CHAT_TRANSCRIPT_TABLE}'''
         result = select_db(query)
         try:
             count = result[0][0]
