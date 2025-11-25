@@ -649,7 +649,7 @@ class CdkStack(Stack):
             "python3 -m pip install --upgrade pip",
             "mkdir -p /home/ec2-user/cexp_app",
             "cd /home/ec2-user/cexp_app",
-            f"git clone --branch ocr https://{github_token}@github.com/1CloudHub/DevCraft-in-a-Box-CEXP-Code.git cexpOCR > gitclone.log 2>&1",
+            f"git clone --branch ocr_nova https://{github_token}@github.com/1CloudHub/DevCraft-in-a-Box-CEXP-Code.git cexpOCR > gitclone.log 2>&1",
             
             "cd cexpOCR", 
             f"""cat <<EOF > .env
