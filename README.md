@@ -109,30 +109,7 @@ cdk deploy
 
 ## Post Deployment Steps
 
-### 10. Request Model Access in Bedrock
-
-Navigate to the **Amazon Bedrock** service in the AWS Console.
-
-* Open the **Model access** tab.
-* Request access to the following models:
-
-  ```
-  - Claude 3.5 Sonnet V2
-  - Claude 3.5 Haiku
-  - Claude 3.7 Sonnet
-  - Amazon Rerank
-  - Amazon Titan Embedding V2
-  ```
-
-> It may take a few minutes for the model access to be approved.
-
-![Model Access Navigation](./assets/model-access-navigation.png)
-![Model Access](./assets/enable-model.png)
-![Model Access](./assets/request-for-access.png)
-![Bedrock Confirmation](./assets/bedrock-confirmation-page.png)
----
-
-### 11. Get the Application URL
+### 10. Get the Application URL
 
 Navigate to the **CloudFront** service.
 
