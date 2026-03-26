@@ -207,7 +207,8 @@ class CdkStack(Stack):
         CfnOutput(self, "RdsEndpointAddress", value=self.rds_instance.db_instance_endpoint_address)
         
         # === Create S3 ===
-        bucket_name = "cexp-bucket"
+        cexp_bucket_suffix = ''.join(random.choices(string.ascii_lowercase + string.digits, k=45))
+        bucket_name = "cexp-bucket-" + cexp_bucket_suffix
         final_bucket_name = get_available_bucket_name(bucket_name)
 
         # Create the bucket with your original CORS config
@@ -1100,7 +1101,8 @@ class CdkStack(Stack):
         
 
         # === Create S3 ===
-        site_bucket = "cexp-site"
+        site_bucket_suffix = ''.join(random.choices(string.ascii_lowercase + string.digits, k=45))
+        site_bucket = "cexp-site-" + site_bucket_suffix
         site_bucket_name = get_available_bucket_name(site_bucket)
 
         # Create the bucket with your original CORS config
