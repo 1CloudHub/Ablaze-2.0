@@ -47,7 +47,7 @@ Launch the AWS CloudShell service from the AWS Console.
 ### 4. Clone the Repository
 
 ```bash
-git clone --branch mini-cexp https://github.com/1CloudHub/DevCraft-in-a-Box.git CEXP
+git clone --branch mini-cexp https://github.com/1CloudHub/Ablaze-2.0.git CEXP
 ```
 
 > Clones the specific branch of the Connect Xperience CDK repository to your CloudShell environment.
